@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Staff Portal</h1>
+        <div id="department-selection" class="department-cards">
+            <h2>Select Your Department</h2>
+            <div class="dept-card" data-dept="Administration">Administration</div>
+            <div class="dept-card" data-dept="Examination Cell">Examination Cell</div>
+            <div class="dept-card" data-dept="Facilities">Facilities</div>
+            <div class="dept-card" data-dept="Hostel Administration">Hostel Administration</div>
+            <div class="dept-card" data-dept="IT Services">IT Services</div>
+            <div class="dept-card" data-dept="Laundry">Laundry</div>
+            <div class="dept-card" data-dept="Library">Library</div>
+            <div class="dept-card" data-dept="Maintenance">Maintenance</div>
+            <div class="dept-card" data-dept="Placement Cell">Placement Cell</div>
+        </div>
+        <form id="login-form" class="form hidden">
+            <input type="text" placeholder="Staff ID" required>
+            <input type="text" id="department-input" placeholder="Department" readonly required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

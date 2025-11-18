@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login/Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Student Portal</h1>
+        <div class="form-toggle">
+            <button id="login-btn" class="active">Login</button>
+            <button id="signup-btn">Signup</button>
+        </div>
+        <form id="login-form" class="form">
+            <input type="text" placeholder="Student ID" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <form id="signup-form" class="form hidden">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Student ID" required>
+            <input type="text" placeholder="Department" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
