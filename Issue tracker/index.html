@@ -3,32 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Issue Tracker</title>
+    <title>VisionFix</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left-column">
-            <img src="Screenshot 2025-11-17 092247.png" alt="College Logo" class="logo">
+    <div class="home-container">
+        <div class="home-left">
+            <div class="company-branding">
+                <div class="company-logo">
+                    <div class="logo-circle">
+                        <span class="logo-text">IT</span>
+                    </div>
+                </div>
+                <h1 class="company-name">VisionFix</h1>
+                <p class="company-tagline">Professional Issue Management System</p>
+            </div>
+            <div class="features">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Streamlined Issue Management</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Real-time Collaboration</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Comprehensive Analytics</p>
+                </div>
+            </div>
         </div>
-        <div class="right-column">
-            <h1>Welcome to College Issue Tracker</h1>
-            <div class="role-buttons">
-                <div class="role-card" onclick="redirectTo('student-login.html')">
-                    <h2>Student</h2>
-                    <p>Access your dashboard</p>
-                </div>
-                <div class="role-card" onclick="redirectTo('staff-login.html')">
-                    <h2>Staff</h2>
-                    <p>Manage issues</p>
-                </div>
-                <div class="role-card" onclick="redirectTo('admin-login.html')">
-                    <h2>Admin</h2>
-                    <p>Administrative panel</p>
+        <div class="home-right">
+            <div class="login-selector">
+                <h2>Select Your Role</h2>
+                <p class="subtitle">Choose your portal to continue</p>
+                <div class="role-grid">
+                    <div class="role-card employee" onclick="redirectTo('student-login.html')">
+                        <div class="role-icon">👤</div>
+                        <h3>Employee</h3>
+                        <p>Access your workspace</p>
+                        <button class="role-btn">Login</button>
+                    </div>
+                    <div class="role-card teamhead" onclick="redirectTo('staff-login.html')">
+                        <div class="role-icon">👥</div>
+                        <h3>Team Head</h3>
+                        <p>Manage your team</p>
+                        <button class="role-btn">Login</button>
+                    </div>
+                    <div class="role-card admin" onclick="redirectTo('admin-login.html')">
+                        <div class="role-icon">⚙️</div>
+                        <h3>Admin</h3>
+                        <p>System administration</p>
+                        <button class="role-btn">Login</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>

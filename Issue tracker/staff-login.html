@@ -3,31 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Login</title>
+    <title>Team Head Login - Issue Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Staff Portal</h1>
-        <div id="department-selection" class="department-cards">
-            <h2>Select Your Department</h2>
-            <div class="dept-card" data-dept="Administration">Administration</div>
-            <div class="dept-card" data-dept="Examination Cell">Examination Cell</div>
-            <div class="dept-card" data-dept="Facilities">Facilities</div>
-            <div class="dept-card" data-dept="Hostel Administration">Hostel Administration</div>
-            <div class="dept-card" data-dept="IT Services">IT Services</div>
-            <div class="dept-card" data-dept="Laundry">Laundry</div>
-            <div class="dept-card" data-dept="Library">Library</div>
-            <div class="dept-card" data-dept="Maintenance">Maintenance</div>
-            <div class="dept-card" data-dept="Placement Cell">Placement Cell</div>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-brand">
+                <div class="logo-circle-auth">
+                    <span class="logo-text-auth">IT</span>
+                </div>
+                <h1>VisionFix</h1>
+                <p>Professional Issue Management</p>
+            </div>
+            <div class="auth-info">
+                <div class="info-item">
+                    <span class="info-icon">👥</span>
+                    <h4>Team Management</h4>
+                    <p>Oversee your team's tasks and progress</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📈</span>
+                    <h4>Performance Tracking</h4>
+                    <p>Monitor team productivity and metrics</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🔐</span>
+                    <h4>Secure Access</h4>
+                    <p>Enterprise-grade security and encryption</p>
+                </div>
+            </div>
         </div>
-        <form id="login-form" class="form hidden">
-            <input type="text" placeholder="Staff ID" required>
-            <input type="text" id="department-input" placeholder="Department" readonly required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+        <div class="auth-right">
+            <div class="auth-form-wrapper">
+                <h2>Team Head Login</h2>
+                <p class="form-subtitle">Manage your team's issues</p>
+                <form id="teamhead-login" class="auth-form">
+                    <div class="form-group">
+                        <label>Team Head ID</label>
+                        <input type="text" placeholder="Enter your ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="auth-btn">Login</button>
+                </form>
+                <div class="back-link">
+                    <a href="index.html">← Back to Portal</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
